@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+    color: #D3D9D4; 
+    background-color: #212A31;
+}
+
+/* Header Styles */
+header {
+    background-color: #124E66;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: left;
+}
+
+.header-content {
+    text-align: left;
+}
+
+.logo-name {
+    display: flex;
+    align-items: left;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    color: #D3D9D4; 
+}
+
+/* About Section */
+section#about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #2E3944; 
+    color: #D3D9D4; 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #748092;
+    transition: transform 0.1s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+section#skills {
+    background-color: #124E66; 
+    color: #D3D9D4;
+    text-align: center;
+    padding: 2rem;
+}
+
+section#skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+section#skills li {
+    padding: 0.5rem 4rem;
+    background-color: #748092; 
+    color: #212A31; 
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+section#skills li:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+section#projects {
+    background-color: #2E3944;
+    color: #D3D9D4;
+    text-align: center;
+    padding: 2rem;
+}
+
+section#projects .project {
+    margin: 1rem auto;
+    background-color: #124E66; 
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    color: #D3D9D4;
+    transition: transform 0.3s ease;
+}
+
+section#projects .project:hover {
+    transform: scale(1.05);
+}
+
+/* Resume Section */
+section#resume {
+    background-color: #748092;
+    text-align: center;
+    padding: 2rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #124E66; 
+    color: #D3D9D4; 
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #748092; 
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+section#contact {
+    background-color: #2E3944; 
+    color: #D3D9D4;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #124E66; 
+    color: #D3D9D4;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .socials img {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+footer .socials img:hover {
+    transform: scale(1.2);
+}
+
+footer .additional-links {
+    margin-top: 1rem;
+}
+
+footer .additional-links a {
+    color: #D3D9D4; 
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer .additional-links a:hover {
+    color: #748092; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    section#skills ul {
+        flex-direction: column;
+    }
+
+    section#projects .project {
+        width: 90%;
+    }
+}
